@@ -2,8 +2,9 @@
 @import "./common/variables.scss";
 @import "./common/visually-hidden.scss";
 @import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
-@import "./common/mixin.scss";
+
 
 /* BLOCKS */
 @import "./blocks/button.scss";
