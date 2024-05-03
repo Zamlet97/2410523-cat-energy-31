@@ -20,3 +20,36 @@
 .navigation__menu-link {
   color: $color-dark;
 }
+
+.navigation__menu-open {
+  width: 28px;
+  height: 24px;
+  mask-image: url("../../icons/stack.svg#burger");
+  background-color: $color-dark;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.navigation__menu-close {
+  display: none;
+  width: 18px;
+  height: 18px;
+  mask-image: url("../../icons/stack.svg#close");
+  background-color: $color-dark;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

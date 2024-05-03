@@ -14,6 +14,48 @@
   font-size: 24px;
   line-height: 37px;
   color: $color-dark;
+  position: relative;
+}
+
+.programs__card-title::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  background-color: $color-light-special;
+}
+
+.programs__card--slim::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#cat-sitting");
+  min-width: 36px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  position: absolute;
+  left: 1%;
+  top: 49%;
+  transform: translate(9%);
+}
+
+.programs__card--set::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#cat-stand");
+  min-width: 67px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  position: absolute;
+  left: 0%;
+  top: 70%;
+  transform: translate(0%, -1%);
+}
+
+.programs__card-description {
+  position: relative;
 }
 
 .programs__card-link {
@@ -21,4 +63,11 @@
   line-height: 16px;
   font-size: 16px;
   text-align: center;
+}
+
+.programs__card-link::after {
+  content: "";
+  background-image: url("../../stack.svg#cursor");
+  width: 32px;
+  height: 10px;
 }
