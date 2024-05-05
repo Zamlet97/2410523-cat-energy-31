@@ -10,6 +10,22 @@
   background-color: $color-light-secondary;
 }
 
+.programs__card--slim::before {
+  content: "";
+  width: 50px;
+  height: 53px;
+  display: block;
+  background-image: url("../../icons/stack.svg#cat-sitting");
+}
+
+.programs__card--set::before {
+  content: "";
+  width: 50px;
+  height: 53px;
+  display: block;
+  background-image: url("../../icons/stack.svg#cat-stand");
+}
+
 .programs__card-title {
   font-size: 24px;
   line-height: 37px;
@@ -17,55 +33,42 @@
   position: relative;
 }
 
-.programs__card-title::before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: block;
-  background-color: $color-light-special;
-}
-
-.programs__card--slim::before {
-  content: "";
-  background-image: url("../../icons/stack.svg#cat-sitting");
-  min-width: 36px;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 2;
-  position: absolute;
-  left: 1%;
-  top: 49%;
-  transform: translate(9%);
-}
-
-.programs__card--set::before {
-  content: "";
-  background-image: url("../../icons/stack.svg#cat-stand");
-  min-width: 67px;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 2;
-  position: absolute;
-  left: 0%;
-  top: 70%;
-  transform: translate(0%, -1%);
-}
-
 .programs__card-description {
   position: relative;
 }
 
-.programs__card-link {jhkhghj
+.programs__card-link {
   color: $color-dark;
   line-height: 16px;
-  font-size: 16px;}
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  &:hover::after {
+    width: 32px;
+    height: 12px;
+    mask-image: url("../../icons/stack.svg#cursor-hover");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: $color-dark;
+    display: block;
+    transition: mask-position 3s linear;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 .programs__card-link::after {
   content: "";
-  background-image: url("../../stack.svg#cursor");
-  width: 32px;
-  height: 10px;
+  mask-image: url("../../icons/stack.svg#cursor");
+  display: block;
+  width: 24px;
+  height: 12px;
+  background-color: $color-dark;
+  mask-position: center;
+  mask-repeat: no-repeat;
 }

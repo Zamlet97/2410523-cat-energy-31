@@ -12,6 +12,19 @@
   text-align: center;
 }
 
+.example__list {
+  display: flex;
+  gap: 32px;
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: $border-style-primary;
+  width: 124px;
+}
+
 .example__item-title {
   font-family: $secondary-font;
   color: $color-dark;
