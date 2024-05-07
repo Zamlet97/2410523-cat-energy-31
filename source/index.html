@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <link rel="apple-touch-icon" href="favicons/180.png"><!-- 180×180 -->
   <link rel="icon" href="favicons/192.png"><!-- 192×192 -->
   <link rel="icon" href="favicons/512.png"><!-- 512×512 -->
   <link rel="manifest" href="manifest.webmanifest">
@@ -26,10 +26,10 @@
         </picture>
         <img class="logo__image-text" src="images/logo/logo-text.svg" width="101" height="18" alt="Логотип текст кот Energy">
       </a>
+      <button class="navigation__open navigation__close" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
       <div class="navigation__menu">
-        <button class="navigation__menu-close" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
         <ul class="navigation__menu-list">
           <li class="navigation__menu-item">
             <a class="navigation__menu-link navigation__menu-link--current" href="#">Главная</a>
@@ -53,7 +53,7 @@
         <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/promo/promo-cat-tablet@1x.png 1x, images/promo/promo-cat-tablet@2x.png 2x">
         <img class="promo__image" src="images/promo/promo-cat-mobile@2x.png" width="280" height="270" srcset="images/promo/promo-cat-mobile@1x.png 1x, images/promo/promo-cat-mobile@2x.png 2x" alt="Корм для котов с курицей">
       </picture>
-      <button class="promo__button button" type="button">Подобрать программу</button>
+      <button class="promo__button button button--primary" type="button">Подобрать программу</button>
     </section>
     <section class="programs wrapper">
       <h2 class="visually-hidden">Програмы питания</h2>
