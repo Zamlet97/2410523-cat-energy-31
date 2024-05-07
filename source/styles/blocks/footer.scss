@@ -3,25 +3,26 @@
 
 .footer {
   background-color: $color-light-primary;
+  display: flex;
 }
 
-.footer__developer {
+.footer__developer-text {
+  display: flex;
+  align-items: center;
+  color: $color-dark-primary;
+
   &:hover::after {
     background-color: $color-light-special;
   }
 }
 
-.footer__developer-text {
-  display: flex;
-  gap: 140px;
-  align-items: center;
-  color: $color-dark-primary;
-}
-/* .footer__developer-text::after {
+.footer__developer-text::after {
   content: "";
   width: 27px;
   height: 34px;
   background-color: $color-socials;
   mask-image: url("../../icons/stack.svg#developer");
+  mask-size: 27px 34px;
+  mask-position: center;
   display: block;
-} */
+}
