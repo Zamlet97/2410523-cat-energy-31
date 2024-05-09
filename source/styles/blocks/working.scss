@@ -3,6 +3,8 @@
 
 .working__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .working__item {
@@ -62,4 +64,41 @@
 
 .working__item-text {
   display: flex;
+}
+
+
+@media (min-width: $tablet-width) {
+  .working__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .working__item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-width: 237px;
+    margin-right: 137px;
+    margin-top: 37px;
+  }
+
+  .working__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .working__title {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .working__list {
+    display: flex;
+    flex: wrap;
+    gap: 77px; //обратить внимание на расстоние между элементами
+  }
+
+  .working__item {
+    margin-right: 0;
+  }
 }

@@ -6,6 +6,34 @@
   color: $color-dark;
   display: flex;
   align-items: center;
+  margin-top: 13px;
+  width: 280px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    min-width: 704px;
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    min-width: 1220px;
+    display: flex;
+  }
+}
+
+
+.navigation__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .navigation__menu {
@@ -13,12 +41,29 @@
   font-size: 18px;
   line-height: 24px;
   font-family: $secondary-font;
-  display: flex;
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__menu {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .navigation__menu-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
+
+@media (min-width: $tablet-width) {
+  .navigation__menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+  }
+}
+
 
 .navigation__menu-link {
   color: $color-dark;
@@ -49,6 +94,7 @@
   mask-image: url("../../icons/stack.svg#close");
   background-color: $color-dark;
   cursor: pointer;
+  margin-left: auto;
 
   &:hover {
     opacity: 0.8;
@@ -56,5 +102,11 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__close {
+    display: none;
   }
 }
