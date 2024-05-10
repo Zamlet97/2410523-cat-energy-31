@@ -4,10 +4,15 @@
 .programs {
   background-color: $color-light;
   color: $color-dark;
+  display: flex;
+  flex-direction: column;
 }
 
 .programs__card {
   background-color: $color-light-secondary;
+  margin-bottom: 20px;
+  position: relative;
+  width: 280px;
 }
 
 .programs__card--slim::before {
@@ -16,6 +21,9 @@
   height: 53px;
   display: block;
   background-image: url("../../icons/stack.svg#cat-sitting");
+  position: absolute;
+  left: 20px;
+  top: 21px;
 }
 
 .programs__card--set::before {
@@ -24,16 +32,17 @@
   height: 53px;
   display: block;
   background-image: url("../../icons/stack.svg#cat-stand");
+  position: absolute;
+  left: 13px;
+  top: 24px;
 }
 
 .programs__card-title {
   font-size: 24px;
   line-height: 37px;
-  position: relative;
 }
 
 .programs__card-description {
-  position: relative;
 }
 
 .programs__card-link {
@@ -71,3 +80,54 @@
   mask-position: center;
   mask-repeat: no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .programs__card {
+    width: 708px;
+  }
+
+  .programs__card--slim::before {
+    content: "";
+    display: block;
+    background-image: url("../../icons/stack.svg#cat-sitting");
+    width: 200px;
+    height: 211px;
+  }
+
+  .programs__card--set::before {
+    content: "";
+    display: block;
+    background-image: url("../../icons/stack.svg#cat-stand");
+    width: 268px;
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .programs__card {
+    width: 570px;
+  }
+
+  .programs__card--slim::before {
+    content: "";
+    display: block;
+    background-image: url("../../icons/stack.svg#cat-sitting");
+    width: 100px;
+    height: 106px;
+  }
+
+  .programs__card--set::before {
+    content: "";
+    display: block;
+    background-image: url("../../icons/stack.svg#cat-stand");
+    width: 134px;
+    height: 100px;
+  }
+}
+
