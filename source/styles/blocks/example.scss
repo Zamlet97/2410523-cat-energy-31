@@ -48,7 +48,6 @@
 
 .example__button {
   width: 4px;
-  height: 256px;
   background-color: $color-socials;
   display: block;
   border-style: none;
@@ -93,10 +92,29 @@
   display: block;
   mask-image: url("../../icons/stack.svg#slider-arrow");
   background-color: $color-socials;
+  mask-position: center;
   width: 24px;
   height: 18px;
   position: absolute;
   left: 0;
   top: 44%;
   transform: translate(-36%);
+}
+
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: $color-light;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    background-color: $color-light-secondary;
+  }
+
+  .example__title {
+    background-color: $color-light;
+    width: 325px;
+  }
 }

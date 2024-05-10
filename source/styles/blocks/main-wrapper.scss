@@ -1,2 +1,15 @@
-/* Тут будет код */
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
 
+
+@media (min-width: $tablet-width) {
+  .main-wrapper {
+    width: 705px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-wrapper {
+    width: 1220px;
+  }
+}

@@ -21,3 +21,26 @@
   color: $color-dark-special;
   font-weight: 700;
 }
+
+.subproducts__button {
+  width: 280px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .subproducts__button {
+    width: 632px;
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subproducts__wrapper {
+    display: flex;
+  }
+
+  .subproducts__list {
+    width: 896px;
+    display: block;
+  }
+}

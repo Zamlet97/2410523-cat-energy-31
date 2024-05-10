@@ -15,3 +15,34 @@
   color: #111111;
   font-size: 16px;
 }
+
+.catalog__item {
+  width: 320px;
+  padding: 20px 20px 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px; //разобратьсяс отступами
+  }
+
+  .catalog__item {
+    width: 324px;
+    padding: 0;
+    background-color: $color-light-primary;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .catalog__item {
+    width: 245px;
+  }
+}
