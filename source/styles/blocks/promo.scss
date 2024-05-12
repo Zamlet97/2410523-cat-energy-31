@@ -7,6 +7,13 @@
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-light;
+    color: $color-dark;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .promo__title {
@@ -14,6 +21,10 @@
   font-size: 36px;
   text-align: center;
   color: $color-light;
+
+  @media (min-width: $tablet-width) {
+    color: $color-dark;
+  }
 }
 
 
@@ -24,35 +35,24 @@
   color: $color-light;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: $color-dark;
+  }
 }
 
 .promo__image {
   /* background-color: transparent; */
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    z-index: -1;
+    order: 2;
+    display: flex;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .promo {
-    background-color: $color-light;
-    color: $color-dark;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .promo__title {
-    color: $color-dark;
-  }
-
-  .promo__description {
-    color: $color-dark;
-  }
-
-  .promo__image {
-    z-index: -1;
-    order: 2;
-    display: flex ;
-  }
-
   .promo__button {
     width: 244px;
     order: 1;

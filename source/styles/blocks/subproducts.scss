@@ -8,6 +8,11 @@
 
 .subproducts__list {
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    display: block;
+  }
 }
 
 .subproducts__item {
@@ -25,10 +30,8 @@
 .subproducts__button {
   width: 280px;
   display: block;
-}
 
-@media (min-width: $tablet-width) {
-  .subproducts__button {
+  @media (min-width: $tablet-width) {
     width: 632px;
     display: block;
   }
@@ -38,9 +41,3 @@
   .subproducts__wrapper {
     display: flex;
   }
-
-  .subproducts__list {
-    width: 896px;
-    display: block;
-  }
-}
