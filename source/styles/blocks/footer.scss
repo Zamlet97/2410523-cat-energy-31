@@ -9,6 +9,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-betweenl;
+  }
 }
 
 .footer__logo-img {
@@ -40,12 +46,4 @@
   mask-size: 27px 34px;
   mask-position: center;
   display: block;
-}
-
-@media (min-width: $tablet-width) {
-  .footer__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-betweenl;
-  }
 }

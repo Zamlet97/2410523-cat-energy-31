@@ -3,6 +3,14 @@
 
 .example {
   background-color: $color-light-secondary;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-light-secondary;
+  }
 }
 
 .example__title {
@@ -10,6 +18,11 @@
   font-size: 40px;
   color: $color-dark;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-light;
+    width: 325px;
+  }
 }
 
 .example__list {
@@ -101,20 +114,3 @@
   transform: translate(-36%);
 }
 
-
-@media (min-width: $tablet-width) {
-  .example {
-    background-color: $color-light;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .example {
-    background-color: $color-light-secondary;
-  }
-
-  .example__title {
-    background-color: $color-light;
-    width: 325px;
-  }
-}

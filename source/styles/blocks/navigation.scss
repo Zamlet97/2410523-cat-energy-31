@@ -41,10 +41,8 @@
   font-size: 18px;
   line-height: 24px;
   font-family: $secondary-font;
-}
 
-@media (min-width: $desktop-width) {
-  .navigation__menu {
+  @media (min-width: $desktop-width) {
     display: flex;
     margin-left: auto;
   }
@@ -54,16 +52,19 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: $tablet-width) {
-  .navigation__menu-list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     gap: 33px;
   }
-}
 
+  @media (min-width: $desktop-width) {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .navigation__menu-link {
   color: $color-dark;
@@ -96,17 +97,15 @@
   cursor: pointer;
   margin-left: auto;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .navigation__close {
-    display: none;
   }
 }

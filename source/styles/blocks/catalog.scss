@@ -9,6 +9,18 @@
 
 .catalog__list {
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px; //разобратьсяс отступами
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
 }
 
 .catalog__prices-title {
@@ -19,30 +31,14 @@
 .catalog__item {
   width: 320px;
   padding: 20px 20px 25px;
-}
 
-@media (min-width: $tablet-width) {
-  .catalog__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 17px; //разобратьсяс отступами
-  }
-
-  .catalog__item {
+  @media (min-width: $tablet-width) {
     width: 324px;
     padding: 0;
     background-color: $color-light-primary;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .catalog__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-  }
-
-  .catalog__item {
+  @media (min-width: $desktop-width) {
     width: 245px;
   }
 }

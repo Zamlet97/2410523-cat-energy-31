@@ -6,6 +6,12 @@
   color: $color-dark;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .programs__card {
@@ -13,6 +19,14 @@
   margin-bottom: 20px;
   position: relative;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;// верно ли ?
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .programs__card--slim::before {
@@ -24,6 +38,18 @@
   position: absolute;
   left: 20px;
   top: 21px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#cat-sitting");
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../icons/stack.svg#cat-sitting");
+    width: 100px;
+    height: 106px;
+  }
 }
 
 .programs__card--set::before {
@@ -35,6 +61,17 @@
   position: absolute;
   left: 13px;
   top: 24px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#cat-stand");
+    width: 268px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../icons/stack.svg#cat-stand");
+    width: 134px;
+    height: 100px;
 }
 
 .programs__card-title {
@@ -78,54 +115,3 @@
   mask-position: center;
   mask-repeat: no-repeat;
 }
-
-@media (min-width: $tablet-width) {
-  .programs__card {
-    width: 708px;
-  }
-
-  .programs__card--slim::before {
-    content: "";
-    display: block;
-    background-image: url("../../icons/stack.svg#cat-sitting");
-    width: 200px;
-    height: 211px;
-  }
-
-  .programs__card--set::before {
-    content: "";
-    display: block;
-    background-image: url("../../icons/stack.svg#cat-stand");
-    width: 268px;
-    height: 200px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .programs {
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-  }
-
-  .programs__card {
-    width: 570px;
-  }
-
-  .programs__card--slim::before {
-    content: "";
-    display: block;
-    background-image: url("../../icons/stack.svg#cat-sitting");
-    width: 100px;
-    height: 106px;
-  }
-
-  .programs__card--set::before {
-    content: "";
-    display: block;
-    background-image: url("../../icons/stack.svg#cat-stand");
-    width: 134px;
-    height: 100px;
-  }
-}
-
