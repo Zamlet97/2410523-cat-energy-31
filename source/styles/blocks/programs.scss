@@ -6,6 +6,7 @@
   color: $color-dark;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -19,9 +20,22 @@
   margin-bottom: 20px;
   position: relative;
   width: 280px;
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  grid-template-areas:
+    "before title"
+    "text   text"
+    "link   link";
+  align-items: start;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: 708px;// верно ли ?
+    grid-template-columns: 340px 1fr;
+    grid-template-areas:
+      "title before"
+      "text  before"
+      "link  before";
   }
 
   @media (min-width: $desktop-width) {
@@ -33,20 +47,20 @@
   content: "";
   width: 50px;
   height: 53px;
-  display: block;
+  display: flex;
   background-image: url("../../icons/stack.svg#cat-sitting");
-  position: absolute;
-  left: 20px;
-  top: 21px;
+  background-position: center;
+  grid-area: before;
+  align-self: center;
+  background-repeat: no-repeat;
+
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../icons/stack.svg#cat-sitting");
     width: 200px;
     height: 211px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../icons/stack.svg#cat-sitting");
     width: 100px;
     height: 106px;
   }
@@ -54,31 +68,45 @@
 
 .programs__card--set::before {
   content: "";
-  width: 50px;
-  height: 53px;
+  width: 67px;
+  height: 50px;
   display: block;
   background-image: url("../../icons/stack.svg#cat-stand");
-  position: absolute;
-  left: 13px;
-  top: 24px;
+  grid-area: before;
+  align-self: center;
+  background-repeat: no-repeat;
+
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../icons/stack.svg#cat-stand");
     width: 268px;
     height: 200px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../icons/stack.svg#cat-stand");
     width: 134px;
     height: 100px;
+  }
 }
 
 .programs__card-title {
   font-size: 24px;
   line-height: 37px;
+  grid-area: title;
+  justify-self: start;
 }
 
+.programs__card-description {
+  grid-area: text;
+  margin-bottom: 23px;
+}
+
+.programs__card-description::after {
+  content: "";
+  border: 1px solid #d9d9d9;
+  display: block;
+  width: 100%;
+  margin-top: 23px;
+}
 
 .programs__card-link {
   color: $color-dark;
@@ -88,6 +116,7 @@
   display: flex;
   gap: 15px;
   align-items: center;
+  grid-area: link;
 
   &:hover::after {
     width: 32px;
