@@ -29,7 +29,7 @@
   align-items: start;
   padding: 0 20px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
     width: 708px;// верно ли ?
     grid-template-columns: 340px 1fr;
     grid-template-areas:
