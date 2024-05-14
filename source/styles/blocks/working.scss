@@ -13,9 +13,8 @@
 
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex: wrap;
-    gap: 77px; //обратить внимание на расстоние между элементами
+
+    //gap: 77px; //обратить внимание на расстоние между элементами
   }
 }
 
@@ -29,14 +28,13 @@
     flex-direction: column;
     align-items: start;
     min-width: 237px;
-    margin-right: 137px;
+    // margin-right: 137px;
     margin-top: 37px;
   }
 
   .working__item:nth-child(2n) {
     margin-right: 0;
   }
-
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
@@ -54,7 +52,7 @@
 .working__item--useful::before {
   content: "";
   display: block;
-  background-image: url("../../icons/stack.svg#sheet");
+  background-image: url("/icons/stack.svg#sheet");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 30px 32px;
@@ -63,7 +61,7 @@
 .working__item--powder::before {
   content: "";
   display: block;
-  background-image: url("../../icons/stack.svg#powder");
+  background-image: url("/icons/stack.svg#powder");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 30px 32px;
@@ -72,7 +70,7 @@
 .working__item--functional::before {
   content: "";
   display: block;
-  background-image: url("../../icons/stack.svg#knife-fork");
+  background-image: url("/icons/stack.svg#knife-fork");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 30px 32px;
@@ -81,7 +79,7 @@
 .working__item--upgrade::before {
   content: "";
   display: block;
-  background-image: url("../../icons/stack.svg#alarm");
+  background-image: url("/icons/stack.svg#alarm");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 30px 32px;

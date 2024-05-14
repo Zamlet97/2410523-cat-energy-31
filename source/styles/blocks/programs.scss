@@ -48,12 +48,11 @@
   width: 50px;
   height: 53px;
   display: flex;
-  background-image: url("../../icons/stack.svg#cat-sitting");
+  background-image: url("/icons/stack.svg#cat-sitting");
   background-position: center;
   grid-area: before;
   align-self: center;
   background-repeat: no-repeat;
-
 
   @media (min-width: $tablet-width) {
     width: 200px;
@@ -71,11 +70,10 @@
   width: 67px;
   height: 50px;
   display: block;
-  background-image: url("../../icons/stack.svg#cat-stand");
+  background-image: url("/icons/stack.svg#cat-stand");
   grid-area: before;
   align-self: center;
   background-repeat: no-repeat;
-
 
   @media (min-width: $tablet-width) {
     width: 268px;
@@ -98,14 +96,12 @@
 .programs__card-description {
   grid-area: text;
   margin-bottom: 23px;
-}
+  border-bottom: 1px solid #d9d9d9;
 
-.programs__card-description::after {
-  content: "";
-  border: 1px solid #d9d9d9;
-  display: block;
-  width: 100%;
-  margin-top: 23px;
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+    border: none;
+  }
 }
 
 .programs__card-link {
@@ -121,7 +117,7 @@
   &:hover::after {
     width: 32px;
     height: 12px;
-    mask-image: url("../../icons/stack.svg#cursor-hover");
+    mask-image: url("/icons/stack.svg#cursor-hover");
     mask-position: center;
     mask-repeat: no-repeat;
     background-color: $color-dark;
@@ -136,7 +132,7 @@
 
 .programs__card-link::after {
   content: "";
-  mask-image: url("../../icons/stack.svg#cursor");
+  mask-image: url("/icons/stack.svg#cursor");
   display: block;
   width: 24px;
   height: 12px;

@@ -2,17 +2,48 @@
 @use "../common/variables.scss";
 
 .promo {
-  background-color: $color-light-special;
+  background-image: linear-gradient(to left, #68b738d9, rgba(104, 183, 56, 0.85)), url("../../images/background/background-cat @2x.png");
   color: $color-dark;
+  background-repeat: no-repeat;
+  background-size: 100% 302px;
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
     background-color: $color-light;
     color: $color-dark;
     display: flex;
     flex-direction: column;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    background-image: none;
+    grid-template-areas:
+      "title  img"
+      "text   img"
+      "button img";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo::before {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-image: linear-gradient(to left, #68b738d9, rgba(104, 183, 56, 0.85)), url("../../images/background/background-cat-desktop@2x.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 680px;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    display: block;
   }
 }
 
@@ -21,9 +52,17 @@
   font-size: 36px;
   text-align: center;
   color: $color-light;
+  order: -3;
 
   @media (min-width: $tablet-width) {
     color: $color-dark;
+    text-align: start;
+    padding-left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: title;
+    display: block;
   }
 }
 
@@ -35,26 +74,50 @@
   color: $color-light;
   text-transform: uppercase;
   text-align: center;
+  order: -2;
 
   @media (min-width: $tablet-width) {
     color: $color-dark;
+    text-align: start;
+    padding-left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: text;
   }
 }
 
 .promo__image {
   /* background-color: transparent; */
-  display: flex;
+  //display: flex;
+  //display: grid;
 
-  @media (min-width: $tablet-width) {
-    z-index: -1;
-    order: 2;
-    display: flex;
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    grid-area: img;
+    grid-column: 3/-1;
   }
 }
+
 
 @media (min-width: $tablet-width) {
   .promo__button {
     width: 244px;
-    order: 1;
+    order: -1;
+    padding: 14px 10px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 120px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo__button {
+    grid-area: button;
+  }
+}
+
