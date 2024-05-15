@@ -13,9 +13,14 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-    width: 245px;
-    display: block;
+    width: 707px;
     background-image: linear-gradient(to left, #68b738d9, rgba(104, 183, 56, 0.85)), url("../../images/background/background-cat-2-tabl@1x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    background-image: linear-gradient(to left, #68b738d9, rgba(104, 183, 56, 0.85)), url("../../images/background/background-cat-2-desktop@2x.png");
+    margin-left: auto;
   }
 }
 

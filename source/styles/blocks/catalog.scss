@@ -1,17 +1,28 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
+.catalog {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
 .catalog__title {
   font-size: 36px;
   line-height: 36px;
   color: $color-dark;
   padding-left: 30px;
   margin-bottom: 84px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 
 .catalog__list {
   list-style-type: none;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
