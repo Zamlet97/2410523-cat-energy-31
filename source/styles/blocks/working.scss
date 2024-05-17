@@ -19,7 +19,8 @@
 }
 
 .working__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 60px 1fr;
   gap: 15px;
   align-items: center;
 
@@ -88,6 +89,7 @@
 .working__title {
   line-height: 40px;
   font-size: 36px;
+  text-align: start;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
