@@ -2,10 +2,11 @@
 @use "../common/variables.scss";
 
 .promo {
-  background-image: linear-gradient(to left, #68b738d9, rgba(104, 183, 56, 0.85)), url("../../images/background/background-cat @2x.png");
+  background-image: linear-gradient(to left, #64a83c, rgba(98, 165, 58, 0.85)), url("../../images/background/background-cat @2x.png");
   color: $color-dark;
   background-repeat: no-repeat;
-  background-size: 100% 302px;
+  background-size: auto 302px;
+  background-position: center top;
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
@@ -35,8 +36,8 @@
     content: "";
     position: absolute;
     background-size: contain;
-    background-image: linear-gradient(to left, #68b738d9, rgba(104, 183, 56, 0.85)), url("../../images/background/background-cat-desktop@2x.png");
-    background-position: right top;
+    background-image: linear-gradient(to left, #64a83c, #62a53a), url("../../images/background/background-cat-desktop@2x.png");
+    background-position: center bottom;
     background-repeat: no-repeat;
     width: 720px;
     height: 680px;

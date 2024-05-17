@@ -2,12 +2,9 @@
 @use "../common/variables.scss";
 
 .navigation {
-  background-color: $color-light;
-  color: $color-dark;
   display: flex;
   align-items: center;
   padding-top: 13px;
-  width: 280px;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
@@ -43,7 +40,6 @@
   line-height: 24px;
   font-family: $secondary-font;
   display: block;
-  background-color: $color-light;
   position: static;
   left: 0;
   top: 42px;
@@ -79,8 +75,6 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
-  background-color: $color-light;
-  // width: 320px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
