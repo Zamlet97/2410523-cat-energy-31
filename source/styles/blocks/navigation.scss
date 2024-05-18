@@ -40,10 +40,11 @@
   line-height: 24px;
   font-family: $secondary-font;
   display: block;
-  position: static;
+  position: absolute;
   left: 0;
-  top: 42px;
+  top: 100%;
   text-align: center;
+  min-width: 100%;
 
   @media (min-width: $tablet-width) {
     min-width: 436px;
@@ -75,6 +76,8 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
+  background-color: $color-light;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

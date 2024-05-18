@@ -7,6 +7,9 @@
   color: $color-dark-primary;
   font-family: $secondary-font;
   border: $border-style-secondary;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 2px 5px;
 
   @media (min-width: $desktop-width) {
     width: 496px;
@@ -33,6 +36,7 @@
   font-size: 20px;
   line-height: 26px;
   padding: 0;
+  width: 100%;
 
   @media (min-width: $desktop-width) {
     width: 256px;

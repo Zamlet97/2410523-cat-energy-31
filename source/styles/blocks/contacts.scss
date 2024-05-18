@@ -21,6 +21,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 26px 20px;
+  background-color: $color-light-secondary;
 }
 
 .contacts__description {
@@ -28,9 +29,10 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
-  font-weight: 700;
+  //font-weight: 700;
   margin: 0;
   text-align: start;
+  font-family: $secondary-font;
 
   @media (min-width: $tablet-width) {
     margin-left: 70px;
@@ -47,6 +49,7 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-dark-primary;
+  font-style: normal;
 
   @media (min-width: $tablet-width) {
     margin-right: 70px;

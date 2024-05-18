@@ -10,6 +10,7 @@
   flex-flow: column;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  overflow-x: hidden;
 
   @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
     background-color: $color-light;
