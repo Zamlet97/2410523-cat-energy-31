@@ -3,6 +3,7 @@
 
 .example {
   background-color: $color-light-secondary;
+  max-width: 100%;
 
   @media (min-width: $tablet-width) {
     background-color: $color-light;
