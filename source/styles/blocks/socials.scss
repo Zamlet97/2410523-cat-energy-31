@@ -4,31 +4,7 @@
 .socials {
   list-style-type: none;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  padding: 0;
-  /* border-bottom: $border-style #d9d9d9; */
-  // border-width: 100%;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
-}
-
-.socials::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: #d9d9d9;
-}
-
-.socials__item {
-  margin-left: 24px;
-}
-
-.socials__item:nth-last-child(3n) {
-  margin-left: 0;
+  gap: 24px;
 }
 
 .socials__link {
@@ -46,8 +22,9 @@
 
 .socials__link::after {
   content: "";
-  width: 28px;
-  height: 22px;
+  width: 27px;
+  height: 17px;
+  mask-image: url("../../icons/stack.svg#vkontakte");
   background-color: $color-socials;
   display: block;
 }
