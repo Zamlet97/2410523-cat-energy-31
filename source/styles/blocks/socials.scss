@@ -33,19 +33,22 @@
 }
 
 .socials__link {
-  .socials__link::after {
-    content: "";
-    width: 28px;
-    height: 22px;
-    background-color: $color-socials;
-    display: block;
+  width: 40px;
+  height: 40px;
+
+  &:hover::after {
+    background-color: $color-light-special;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }
 
 .socials__link::after {
   content: "";
-  width: 27px;
-  height: 17px;
+  width: 28px;
+  height: 22px;
   mask-image: url("../../icons/stack.svg#vkontakte");
   background-color: $color-socials;
   display: block;
