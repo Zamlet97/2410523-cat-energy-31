@@ -5,24 +5,30 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  counter-reset: working 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 100px;
   }
 
 
   @media (min-width: $desktop-width) {
 
-    //gap: 77px; //обратить внимание на расстоние между элементами
+    //gap: 77px;обратить внимание на расстоние между элементами
   }
 }
+
 
 .working__item {
   display: grid;
   grid-template-columns: 60px 1fr;
   gap: 15px;
   align-items: center;
+  counter-increment: working 1;
+  position: relative;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -31,6 +37,7 @@
     min-width: 237px;
     // margin-right: 137px;
     margin-top: 37px;
+    padding: 40px 26px 57px 0;
   }
 
   .working__item:nth-child(2n) {
@@ -42,48 +49,62 @@
   }
 }
 
+.working__item::after {
+  content: counter(working);
+  width: 100%;
+  height: 100%;
+  font-family: $secondary-font;
+  font-size: 280px;
+  line-height: 280px;
+  display: none;
+  z-index: -1;
+  color: $color-light-secondary;
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
 .working__item::before {
   content: "";
   background-color: $color-light-special;
   width: 60px;
   height: 60px;
   display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .working__item--useful::before {
   content: "";
-  display: block;
   background-image: url("/icons/stack.svg#sheet");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 30px 32px;
 }
 
 .working__item--powder::before {
   content: "";
   display: block;
   background-image: url("/icons/stack.svg#powder");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 30px 32px;
 }
 
 .working__item--functional::before {
   content: "";
   display: block;
   background-image: url("/icons/stack.svg#knife-fork");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 30px 32px;
 }
 
 .working__item--upgrade::before {
   content: "";
   display: block;
   background-image: url("/icons/stack.svg#alarm");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 30px 32px;
 }
 
 .working__title {

@@ -29,16 +29,16 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
-    width: 708px;// верно ли ?
     grid-template-columns: 340px 1fr;
     grid-template-areas:
       "title before"
       "text  before"
       "link  before";
+    padding: 77px 63px 53px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
+    //width: 570px;
   }
 }
 
@@ -56,6 +56,7 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 211px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,6 +78,7 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 200px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,6 +92,15 @@
   line-height: 37px;
   grid-area: title;
   justify-self: start;
+  color: $color-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
 }
 
 .programs__card-description {
@@ -97,8 +108,8 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    margin-right: 19px;
-    border: none;
+    margin-bottom: 48px;
+    margin-top: 0;
   }
 }
 
@@ -109,10 +120,14 @@
   height: 1px;
   background-color: #d9d9d9;
   margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .programs__card-link {
-  color: inherit;
+  color: $color-dark;
   line-height: 16px;
   font-size: 16px;
   text-align: center;
@@ -124,6 +139,11 @@
   padding-top: 15px;
   padding-bottom: 13px;
   font-family: $secondary-font;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+    font-size: 20px;
+  }
 
   &:hover::after {
     width: 32px;

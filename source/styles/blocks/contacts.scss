@@ -6,8 +6,7 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -20,8 +19,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 26px 20px;
-  background-color: $color-light-secondary;
+  // padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding: 60px 70px;
+  }
 }
 
 .contacts__description {
@@ -35,7 +38,7 @@
   font-family: $secondary-font;
 
   @media (min-width: $tablet-width) {
-    margin-left: 70px;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,7 +55,7 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
-    margin-right: 70px;
+    text-align: end;
   }
 
   @media (min-width: $desktop-width) {
