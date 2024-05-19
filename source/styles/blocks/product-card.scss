@@ -4,11 +4,40 @@
 .product-card {
   font-size: 16px;
   line-height: 20px;
+  // position: relative;
 }
 
 .product-card__title {
   font-family: $secondary-font;
   color: $color-dark-special;
+  margin-top: 0;
+  text-align: start;
+  max-width: 80px;
 }
 
+.product-card__button {
+  width: 280px;
+  display: inline-block;
+}
 
+.product-card__image {
+  //position: absolute;
+  display: block;
+  bottom: 0;
+}
+
+.product-card__inform {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.product-card__inform-text {
+  margin: 0;
+}
+
+.product-card__inform-value {
+  text-align: end;
+  margin: 0;
+}

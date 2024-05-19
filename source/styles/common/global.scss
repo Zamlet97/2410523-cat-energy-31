@@ -6,6 +6,15 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
+/** {
+  outline: 2px solid green;
+} */
+
+html {
+  height: 100%;
 }
 
 body {
