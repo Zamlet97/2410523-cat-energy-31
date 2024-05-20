@@ -2,7 +2,7 @@
 @use "../common/variables.scss";
 
 .promo {
-  background-image: linear-gradient(to left, #64a83c, rgba(98, 165, 58, 0.85)), url("../../images/background/background-cat @2x.png");
+  //background-image: url("../../images/background/background-cat @2x.png");
   background-repeat: no-repeat;
   background-size: auto 302px;
   background-position: center top;
@@ -22,14 +22,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
-    display: grid;
-    grid-template-columns: 420px 1fr;
-    background-image: none;
-    grid-template-areas:
-      "title  img"
-      "text   img"
-      "button img";
+    // background-image: url("../../images/background/background-cat-desktop@2x.png");
+    // background-size: auto 694px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .promo::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: auto 694px;
+    background-position: right top;
+    width: 50%;
+    height: 694px;
+    //z-index: -1;
+    background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+    top: 0;
+    right: 0;
   }
 }
 
@@ -37,20 +48,17 @@
   .promo::before {
     content: "";
     position: absolute;
-    background-size: contain;
-    background-image: linear-gradient(to left, #64a83c, #61a53a69), url("../../images/background/background-cat-desktop@2x.png");
-    background-position: center bottom;
+    background-image: linear-gradient(90deg, #545358 0%, #424045 100%);
+    //background-position: center bottom;
     background-repeat: no-repeat;
+    background-size: auto 694px;
+    background-position: center top;
     width: 720px;
     height: 680px;
     z-index: -1;
     top: 0;
     right: 0;
     display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    //background-position: right right;
   }
 }
 
@@ -124,6 +132,7 @@
     position: absolute;
     right: 23%;
     top: 8%;
+    z-index: 1;
   }
 }
 

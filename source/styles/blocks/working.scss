@@ -16,7 +16,8 @@
 
   @media (min-width: $desktop-width) {
 
-    //gap: 77px;обратить внимание на расстоние между элементами
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 77px;
   }
 }
 
@@ -114,6 +115,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
 

@@ -10,8 +10,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-wrapper {
+  .main-wrapper::before {
     // max-width: 1220px + 60;
     //padding: 0 120px;
+    content: "";
+    background-image: url("../../images/background/background-cat-desktop-1@2x.png");
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 0;
   }
 }
