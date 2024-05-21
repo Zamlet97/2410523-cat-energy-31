@@ -46,7 +46,7 @@
   </header>
   <main class="main-wrapper">
     <section class="catalog wrapper">
-      <h1 class="catalog__title title">Каталог продукции</h1>
+      <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item product-card">
           <div class="catalog__item--wrapper">
@@ -58,7 +58,7 @@
               </picture>
             </a>
             <div class="product-card__wrapper">
-              <a class="product-card__link title-h3" href="#">Cat Energy PRO 500г</a>
+              <a class="product-card__link product-card__link--title title-h3" href="#">Cat Energy PRO 500г</a>
               <dl class="product-card__informs">
                 <div class="product-card__inform">
                   <dt class="product-card__inform-text">Масса</dt>
@@ -87,7 +87,7 @@
               </picture>
             </a>
             <div class="product-card__wrapper">
-              <a class="product-card__link title-h3" href="#">Cat Energy PRO 1000г</a>
+              <a class="product-card__link product-card__link--title title-h3" href="#">Cat Energy PRO 1000г</a>
               <dl class="product-card__informs">
                 <div class="product-card__inform">
                   <dt class="product-card__inform-text">Масса</dt>
@@ -119,7 +119,7 @@
               </picture>
             </a>
             <div class="product-card__wrapper">
-              <a class="product-card__link title-h3" href="#">Cat Energy PRO 500 г</a>
+              <a class="product-card__link product-card__link--title title-h3" href="#">Cat Energy PRO 500 г</a>
               <dl class="product-card__informs">
                 <div class="product-card__inform">
                   <dt class="product-card__inform-text">Масса</dt>
@@ -148,7 +148,7 @@
               </picture>
             </a>
             <div class="product-card__wrapper">
-              <a class="product-card__link title-h3" href="#">Cat Energy PRO 1000г
+              <a class="product-card__link product-card__link--title title-h3" href="#">Cat Energy PRO 1000г
               </a>
               <dl class="product-card__informs">
                 <div class="product-card__inform">
@@ -179,7 +179,7 @@
               </picture>
             </a>
             <div class="product-card__wrapper">
-              <a class="product-card__link title-h3" href="#">Cat Energy slim 500г</a>
+              <a class="product-card__link product-card__link--title title-h3" href="#">Cat Energy slim 500г</a>
               <dl class="product-card__informs">
                 <div class="product-card__inform">
                   <dt class="product-card__inform-text">Масса</dt>
@@ -208,7 +208,7 @@
               </picture>
             </a>
             <div class="product-card__wrapper">
-              <a class="product-card__link title-h3" href="#">Cat Energy Slim 1000г</a>
+              <a class="product-card__link product-card__link--title title-h3" href="#">Cat Energy Slim 1000г</a>
               <dl class="product-card__informs">
                 <div class="product-card__inform">
                   <dt class="product-card__inform-text">Масса</dt>
@@ -237,7 +237,7 @@
               </picture>
             </a>
             <div class="product-card__wrapper">
-              <a class="product-card__link title-h3" href="#">Cat Energy slim 500г</a>
+              <a class="product-card__link product-card__link--title title-h3" href="#">Cat Energy slim 500г</a>
               <dl class="product-card__informs">
                 <div class="product-card__inform">
                   <dt class="product-card__inform-text">Масса</dt>
@@ -258,21 +258,21 @@
         </li>
 
         <li class="catalog__item product-card">
-          <h2 class="catalog__prices-title title
+          <div class="catalog__item--other">
+            <h2 class="catalog__prices-title title
           title-h2 ">Показать ещё 100500 товаров</h2>
-          <p class="catalog__prices-text">На самом деле вкусов гораздо больше!</p>
-          <a class="catalog__prices-button button button--secondary" href="#">Показать все</a>
+            <p class="catalog__prices-text">На самом деле вкусов гораздо больше!</p>
+            <a class="catalog__prices-button button button--secondary" href="#">Показать все</a>
+          </div>
         </li>
       </ul>
     </section>
     <section class="subproducts wrapper">
       <h2 class="subproducts__title title title-h2">Дополнительные товары</h2>
-      <div class="subproducts__wrapper">
+      <div class="subproducts__wrapper wrapper">
         <ul class="subproducts__list">
           <li class="subproducts__item">
-            <a class="subproducts__link" href="#">
-              <h3 class="subproducts__heading title title-h3">Сахарозаменитель</h3>
-            </a>
+            <a class="subproducts__link title-h3" href="#">Сахарозаменитель</a>
             <div class="subproducts__part-wrapper">
               <p class="subproducts__part-item">1 упаковка (100 г)</p>
               <p class="subproducts__part-price">200 &#8381</p>
@@ -280,9 +280,7 @@
             <a class="subproducts__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="subproducts__item">
-            <a class="subproducts__link" href="#">
-              <h3 class="subproducts__heading title-h3">Питьевая вода</h3>
-            </a>
+            <a class="subproducts__link title-h3" href="#">Питьевая вода</a>
             <div class="subproducts__part-wrapper">
               <p class="subproducts__part-item">5 литров</p>
               <p class="subproducts__part-price">50 &#8381</p>
@@ -290,9 +288,7 @@
             <a class="subproducts__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="subproducts__item">
-            <a class="subproducts__link" href="#">
-              <h3 class="subproducts__heading title-h3">Молоко</h3>
-            </a>
+            <a class="subproducts__link title-h3" href="#">Молоко</a>
             <div class="subproducts__part-wrapper">
               <p class="subproducts__part-item">1 литр</p>
               <p class="subproducts__part-price">100 &#8381</p>
@@ -300,9 +296,7 @@
             <a class="subproducts__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="subproducts__item">
-            <a class="subproducts__link" href="#">
-              <h3 class="subproducts__heading title-h3">Витамины</h3>
-            </a>
+            <a class="subproducts__link title-h3" href="#">Витамины</a>
             <div class="subproducts__part-wrapper">
               <p class="subproducts__part-item">1 упаковка (30 г)</p>
               <p class="subproducts__part-price">300 &#8381</p>
