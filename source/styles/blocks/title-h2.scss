@@ -6,14 +6,27 @@
   color: $color-dark;
   text-align: center;
   font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
 
-  @media (min-width: $desktop-width) {
-    font-size: 40px;
-    line-height: 40px;
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+.title-h2--width-border {
+  @media (min-width: $tablet-width) {
+    width: calc(100% + 30px);
+    background-color: $color-light-special;
+    height: 2px;
+    box-shadow: -30px 0 0 0 $color-light-special;
+    display: flex;
+    align-items: center;
   }
 }
