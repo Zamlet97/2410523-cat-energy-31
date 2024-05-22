@@ -33,7 +33,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 17px; //разобратьсяс отступами
+    gap: 60px; //разобратьсяс отступами
   }
 
   @media (min-width: $desktop-width) {
@@ -92,7 +92,13 @@
   }
 }
 
-.catalog__item--other {
+.catalog__item:last-child::before {
+  @media (min-width: $tablet-width) {
+    background-color: $color-light;
+  }
+}
+
+.catalog__item-other {
   padding: 50px 77px 40px;
 }
 

@@ -6,7 +6,7 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-
+    background-color: $color-light-primary;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,6 +56,11 @@
 
   @media (min-width: $tablet-width) {
     text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,3 +83,4 @@
     //width: 1440px;
   }
 }
+
