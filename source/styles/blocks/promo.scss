@@ -3,14 +3,15 @@
 
 .promo {
   //background-image: url("../../images/background/background-cat @2x.png");
-  background-repeat: no-repeat;
-  background-size: auto 302px;
-  background-position: center top;
-  display: flex; //убрать флекс
-  flex-flow: column;
-  flex-wrap: wrap;
+  // background-repeat: no-repeat;
+  // background-size: auto 302px;
+  // background-position: center top;
+  // display: flex; //убрать флекс
+  // flex-flow: column;
+  // flex-wrap: wrap;
   margin-bottom: 20px;
-  overflow-x: hidden;
+  // overflow-x: hidden;
+  position: relative;
 
   @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
     background-color: $color-light;
@@ -27,6 +28,32 @@
   }
 }
 
+
+.promo::after {
+  content: "";
+  display: block;
+  background-image: linear-gradient(to right, #545258, #3e3d42), linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+  width: 100%;
+  height: 302px;
+  position: absolute;
+}
+
+
+linear-gradient(to right, #54525836, #3e3d426b),
+ linear-gradient(to right, #68b738d9, #68b738d9) .promo::before {
+  content: "";
+  display: block;
+  background-image: url("../../images/background/background-cat\ @1x.png");
+  width: 100%;
+  height: 302px;
+  background-size: auto 302px;
+  position: absolute;
+}
+
+
+.promo__wrapper {
+
+}
 
 @media (min-width: $desktop-width) {
   .promo::after {
@@ -62,10 +89,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+/* @media (min-width: $desktop-width) {
   .promo__background::before {
-    // max-width: 1220px + 60;
-    //padding: 0 120px;
     content: "";
     background-image: url("../../images/background/background-cat-desktop-1@2x.png");
     width: 50%;
@@ -75,7 +100,7 @@
     left: 50%;
     top: 0;
   }
-}
+} */
 
 
 .promo__title {
@@ -156,6 +181,7 @@
 .promo__button {
   margin-left: 20px;
   margin-right: 20px;
+  min-width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 244px;
