@@ -105,7 +105,12 @@
 }
 
 .example__slider {
-  display: flex;
+  padding: 0 20px 40px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 40px;
+  }
 }
 
 .example__button {
@@ -115,7 +120,6 @@
   border-style: none;
   padding: 0;
   position: relative;
-  z-index: 2;
   cursor: pointer;
 
   &:hover,
@@ -145,17 +149,7 @@
   border: 2px solid $color-socials;
   background-position: center;
   position: absolute;
-  left: 50%;
-  top: 22%;
-  transform: translate(-50%, 50%);
-
-  @media (min-width: $tablet-width) {
-    top: 30%;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 50%;
-  }
+  margin: -18px;
 }
 
 .example__button::after {
@@ -166,13 +160,6 @@
   mask-position: center;
   width: 24px;
   height: 18px;
-  position: absolute;
-  left: 50%;
-  top: 37%;
-  transform: translate(-50%, 50%);
-
-  @media (min-width: $desktop-width) {
-    top: 54%;
-  }
+  margin: -9px;
 }
 
