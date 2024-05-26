@@ -25,3 +25,53 @@
 .slider__image--after {
   object-position: right;
 }
+
+.slider__button {
+  width: 4px;
+  background-color: $color-socials;
+  display: block;
+  border-style: none;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+
+  &:hover,
+  &:hover::after {
+    background-color: $color-light-special;
+  }
+
+  &:hover::before {
+    border-color: $color-light-special;
+  }
+
+
+  &:active,
+  &:active::before,
+  &:active::after {
+    opacity: 0.6;
+  }
+}
+
+.slider__button::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $color-light;
+  border: 2px solid $color-socials;
+  background-position: center;
+  position: absolute;
+  margin: -18px;
+}
+
+.slider__button::after {
+  content: "";
+  display: block;
+  mask-image: url("/icons/stack.svg#slider-arrow");
+  background-color: $color-socials;
+  mask-position: center;
+  width: 24px;
+  height: 18px;
+  margin: -9px;
+}
