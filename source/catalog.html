@@ -32,13 +32,13 @@
       <div class="navigation__menu--open navigation__menu">
         <ul class="navigation__menu-list">
           <li class="navigation__menu-item">
-            <a class="navigation__menu-link " href="#">Главная</a>
+            <a class="navigation__menu-link navigation__menu-link--dark " href="#">Главная</a>
           </li>
           <li class="navigation__menu-item">
-            <a class="navigation__menu-link navigation__menu-link--current" href="#">Каталог продукции</a>
+            <a class="navigation__menu-link navigation__menu-link--current-secondary navigation__menu-link--dark" href="#">Каталог продукции</a>
           </li>
           <li class="navigation__menu-item">
-            <a class="navigation__menu-link" href="#">Подбор продукции</a>
+            <a class="navigation__menu-link navigation__menu-link--dark" href="#">Подбор продукции</a>
           </li>
         </ul>
       </div>
@@ -257,20 +257,18 @@
           <a class="product-card__button button button--primary" href="#">Заказать</a>
         </li>
 
-        <li class="catalog__item product-card">
+        <li class="catalog__item product-card product-card--other">
           <div class="catalog__item--wrapper">
-            <div class="catalog__item-other">
-              <h2 class="catalog__prices-title title
-          title-h2 ">Показать ещё 100500 товаров</h2>
-              <p class="catalog__prices-text">На самом деле вкусов гораздо больше!</p>
-            </div>
-            <a class="catalog__prices-button button button--secondary" href="#">Показать все</a>
+            <a class="product-card__title
+          title-h3" href="#">Показать ещё 100500 товаров</a>
+            <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
+            <a class="product-card__button button button--secondary product-card__button-other" href="#">Показать все</a>
           </div>
         </li>
       </ul>
     </section>
     <section class="subproducts wrapper">
-      <h2 class="subproducts__title title title-h2">Дополнительные товары</h2>
+      <h2 class="subproducts__title title-h2 title-h2--width-border">Дополнительные товары</h2>
       <div class="subproducts__wrapper">
         <ul class="subproducts__list">
           <li class="subproducts__item">
@@ -312,7 +310,7 @@
       </div>
     </section>
     <section class="subscribe wrapper">
-      <h2 class="subscribe__title title title-h2 title-h2--width-border">Акции и новинки</h2>
+      <h2 class="subscribe__title title-h2 title-h2--width-border">Акции и новинки</h2>
       <p class="subscribe__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscribe__form form" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="email">Подписаться на новости</label>
@@ -328,12 +326,20 @@
           Конюшенная, д. 19/8<br>
           <span>Санкт-Петербург</span>
         </address>
+
       </div>
-      <picture>
-        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x,">
-        <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x ">
-        <img class="contacts__map-image" src="images/map/map-mobile@2x.png" srcset="images/map/map-mobile@1x.png 1x, images/map/map-mobile@2x.png 2x" width="320" height="362" alt="метка на карте для сотрудничества">
-      </picture>
+      <div class="contacts__map-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728572!2d30.3204724767367!3d59.93871647491517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1716731097502!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <noscript>
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x,">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x ">
+          <img class="contacts__map-image" src="images/map/map-mobile@2x.png" srcset="images/map/map-mobile@1x.png 1x, images/map/map-mobile@2x.png 2x" width="320" height="362" alt="метка на карте для сотрудничества">
+        </picture>
+      </noscript>
+      </div>
     </section>
   </main>
   <footer class="footer">

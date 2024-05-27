@@ -20,13 +20,15 @@
   }
 }
 
-.title-h2--width-border {
-  @media (min-width: $tablet-width) {
-    width: calc(100% + 30px);
-    background-color: $color-light-special;
-    height: 2px;
-    box-shadow: -30px 0 0 0 $color-light-special;
-    display: flex;
-    align-items: center;
-  }
+.title-h2--width-border::after {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 2px;
+  position: absolute;
+  background-color: $color-light-special;
+  top: 50%;
+  right: 0;
+  z-index: -1;
+  box-shadow: 100vw 0 0 0 $color-light-special;
 }

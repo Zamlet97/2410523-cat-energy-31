@@ -13,10 +13,11 @@
   font-weight: 400;
   color: $color-dark;
   margin: 27px 0 41px;
+  font-family: $secondary-font;
 
   @media (min-width: $tablet-width) {
-    font-size: 46px;
-    line-height: 50px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +34,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px; //разобратьсяс отступами
+    gap: 60px;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,20 +48,6 @@
 .catalog__prices-title {
   color: #111111;
   font-size: 16px;
-}
-
-.catalog__prices-title::before {
-  content: "";
-  display: block;
-  background-image: url("/icons/stack.svg#plus");
-  width: 30px;
-  height: 30px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 60px;
-    height: 60px;
-  }
 }
 
 .catalog__item {
@@ -79,7 +67,7 @@
   }
 }
 
-.catalog__item::before {
+/* .catalog__item::before {
   @media (min-width: $tablet-width) {
     content: "";
     display: block;
@@ -90,7 +78,7 @@
     z-index: -1;
     bottom: 0;
   }
-}
+} */
 
 .catalog__item:last-child::before {
   @media (min-width: $tablet-width) {
@@ -98,21 +86,20 @@
   }
 }
 
-.catalog__item-other {
-  padding: 50px 77px 40px;
-}
-
 .catalog__item--wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    //display: block;
+    grid-template-columns: 1fr;
     padding: 0 37px 32px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 170px;
     padding: 0;
+    margin: 0 auto;
   }
 }
 

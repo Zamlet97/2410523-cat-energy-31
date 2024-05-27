@@ -6,14 +6,6 @@
   align-items: center;
   padding-top: 13px;
   flex-wrap: wrap;
-
-  @media (min-width: $tablet-width) {
-    //tyuut
-  }
-
-  @media (min-width: $desktop-width) {
-    //width: 1220px;
-  }
 }
 
 .navigation__logo {
@@ -120,11 +112,25 @@
 
   @media (min-width: $desktop-width) {
     color: $color-light;
+    line-height: 30px;
+    font-size: 20px;
   }
+}
+
+.navigation__menu-link--dark {
+  color: $color-dark;
 }
 
 @media (min-width: $tablet-width) {
   .navigation__menu-link--current::after {
+    content: "";
+    border-bottom: 2px solid $color-light-special;
+    display: block;
+    width: calc(100% - 1px);
+    padding-top: 10px;
+  }
+
+  .navigation__menu-link--current-secondary::after {
     content: "";
     border-bottom: 2px solid $color-light-special;
     display: block;
