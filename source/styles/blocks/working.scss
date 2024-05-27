@@ -13,14 +13,11 @@
     gap: 37px 100px;
   }
 
-
   @media (min-width: $desktop-width) {
-
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 77px;
   }
 }
-
 
 .working__item {
   display: grid;
@@ -29,7 +26,6 @@
   align-items: center;
   counter-increment: working 1;
   position: relative;
-
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -87,25 +83,25 @@
 
 .working__item--useful::before {
   content: "";
-  background-image: url("/icons/stack.svg#sheet");
+  background-image: url("../../icons/stack.svg#sheet");
 }
 
 .working__item--powder::before {
   content: "";
   display: block;
-  background-image: url("/icons/stack.svg#powder");
+  background-image: url("../../icons/stack.svg#powder");
 }
 
 .working__item--functional::before {
   content: "";
   display: block;
-  background-image: url("/icons/stack.svg#knife-fork");
+  background-image: url("../../icons/stack.svg#knife-fork");
 }
 
 .working__item--upgrade::before {
   content: "";
   display: block;
-  background-image: url("/icons/stack.svg#alarm");
+  background-image: url("../../icons/stack.svg#alarm");
 }
 
 .working__title {
@@ -115,10 +111,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 

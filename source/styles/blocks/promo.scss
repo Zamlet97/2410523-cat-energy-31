@@ -15,12 +15,7 @@
     background-image: none;
     position: relative;
   }
-
-  @media (min-width: $desktop-width) {
-    // background-image: url("../../images/background/background-cat-desktop@2x.png");
-  }
 }
-
 
 .promo::before {
   content: "";
@@ -33,34 +28,22 @@
   height: 302px;
   position: absolute;
   z-index: -1;
-}
 
-@media (min-width: $desktop-width) {
-  .promo::before {
-    content: "";
-    background-image: linear-gradient(to bottom, #ffffffba 0%, #4f4e54 0%);
-    background-repeat: no-repeat;
-    background-size: auto 694px;
-    background-position: center top;
-    width: 50%;
-    height: 694px;
-    right: 0;
-    top: 0;
-    display: block;
+  @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
+    background-image: none;
   }
 
-  .promo::after {
+  @media (min-width: $desktop-width) {
     content: "";
-    background-image: linear-gradient(to bottom, #ffffffa1 0%, #68b738cc 0%), url("../../images/background/cat-desktop@2x.png");
-    display: block;
+    background-image: linear-gradient(to bottom, #ffffffa1 0%, #68b738cc 0%), url("../../images/background/cat-desktop@2x.png"), linear-gradient(to bottom, #ffffffba 0%, #4f4e54 0%);
     background-repeat: no-repeat;
     background-size: auto 694px;
     background-position: center top;
     width: 50%;
     height: 694px;
     right: 0;
-    position: absolute;
     top: 0;
+    display: block;
   }
 }
 
@@ -69,10 +52,17 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    max-width: 566px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+    padding-left: 10px;
   }
 }
 
 .promo__title {
+  font-family: $secondary-font;
   line-height: 36px;
   font-size: 36px;
   text-align: center;
@@ -90,11 +80,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: title;
     display: block;
   }
 }
-
 
 .promo__description {
   font-family: $secondary-font;
@@ -115,10 +103,6 @@
     margin-top: 0;
     margin-bottom: 50px;
   }
-
-  @media (min-width: $desktop-width) {
-    grid-area: text;
-  }
 }
 
 .promo__image {
@@ -132,15 +116,12 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    grid-area: img;
-    grid-column: 3/-1;
     position: absolute;
-    right: 23%;
-    top: 0%;
+    left: 87%;
+    bottom: -56%;
     z-index: 1;
   }
 }
-
 
 .promo__button {
   display: block;
@@ -155,9 +136,5 @@
     line-height: 26px;
     margin-left: 120px;
     z-index: 4;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-area: button;
   }
 }

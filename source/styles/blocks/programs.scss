@@ -49,7 +49,7 @@
   width: 50px;
   height: 53px;
   display: flex;
-  background-image: url("/icons/stack.svg#cat-sitting");
+  background-image: url("../../icons/stack.svg#cat-sitting");
   background-position: center;
   grid-area: before;
   align-self: center;
@@ -72,7 +72,7 @@
   width: 67px;
   height: 50px;
   display: block;
-  background-image: url("/icons/stack.svg#cat-stand");
+  background-image: url("../../icons/stack.svg#cat-stand");
   grid-area: before;
   align-self: center;
   background-repeat: no-repeat;
@@ -155,7 +155,7 @@
   &:hover::after {
     width: 32px;
     height: 12px;
-    mask-image: url("/icons/stack.svg#cursor-hover");
+    mask-image: url("../../icons/stack.svg#cursor-hover");
     mask-position: center;
     mask-repeat: no-repeat;
     background-color: $color-dark;
@@ -170,7 +170,7 @@
 
 .programs__card-link::after {
   content: "";
-  mask-image: url("/icons/stack.svg#cursor");
+  mask-image: url("../../icons/stack.svg#cursor");
   display: block;
   width: 24px;
   height: 12px;

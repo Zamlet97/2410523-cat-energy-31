@@ -2,17 +2,11 @@
 @use "../common/variables.scss";
 
 .contacts {
-
   margin-bottom: 0;
-
-  @media (min-width: $tablet-width) {
-    // background-color: $color-light-primary;
-  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     position: relative;
-    // width: 1440px;
   }
 }
 
@@ -96,4 +90,3 @@
   height: 100%;
   width: 100%;
 }
-

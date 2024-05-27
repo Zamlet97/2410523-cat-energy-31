@@ -6,13 +6,13 @@
   max-width: 100%;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff 0 619px, #eaeaea 619px);
+    background-image: linear-gradient(to bottom, #ffffff 58%, #eaeaea 0%);
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-image: linear-gradient(to bottom, #ffffff  598px 0, #eaeaea 598px 20%);
+    background-image: linear-gradient(to bottom, #ffffff  25%, #eaeaea 0%);
   }
 }
 
@@ -73,7 +73,6 @@
     max-width: 436px;
   }
 }
-
 
 .example__item-title {
   font-size: 24px;

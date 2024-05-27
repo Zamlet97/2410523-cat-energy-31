@@ -68,7 +68,7 @@
 .slider__button::after {
   content: "";
   display: block;
-  mask-image: url("/icons/stack.svg#slider-arrow");
+  mask-image: url("../../icons/stack.svg#slider-arrow");
   background-color: $color-socials;
   mask-position: center;
   width: 24px;
