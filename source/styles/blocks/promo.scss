@@ -63,11 +63,14 @@
 
 .promo__title {
   font-family: $secondary-font;
+  font-weight: 400;
   line-height: 36px;
   font-size: 36px;
   text-align: center;
   color: $color-light;
   order: -3;
+  margin: 0 0 25px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     color: $color-dark;
@@ -92,7 +95,7 @@
   text-transform: uppercase;
   text-align: center;
   order: -2;
-  margin-bottom: 52px;
+  margin: 0 0 28px;
 
   @media (min-width: $tablet-width) {
     color: $color-dark;
@@ -106,7 +109,7 @@
 }
 
 .promo__image {
-  margin: 0 auto;
+  margin: 0 auto 3px;
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -126,7 +129,9 @@
 .promo__button {
   display: block;
   margin: 0 auto;
-  max-width: calc(100% - 20px); //был min
+  min-width: calc(100% - 40px);
+  line-height: 20px;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     width: 244px;
@@ -136,5 +141,6 @@
     line-height: 26px;
     margin-left: 120px;
     z-index: 4;
+    max-width: calc(100% - 20px);
   }
 }
