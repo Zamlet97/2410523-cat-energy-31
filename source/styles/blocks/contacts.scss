@@ -18,7 +18,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 60px 70px;
+    padding: 62px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +41,8 @@
   font-family: $secondary-font;
 
   @media (min-width: $tablet-width) {
+    line-height: 26px;
+    font-size: 20px;
     text-align: start;
   }
 
@@ -62,7 +64,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+    gap: 18px;
     font-size: 16px;
   }
 

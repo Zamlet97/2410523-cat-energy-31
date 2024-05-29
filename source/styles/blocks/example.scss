@@ -6,7 +6,8 @@
   max-width: 100%;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff 58%, #eaeaea 0%);
+    background-image: linear-gradient(to bottom, #ffffff 57%, #eaeaea 0%);
+    padding-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,9 +44,10 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 27% 27% 1fr;
-    margin-bottom: 99px;
+    grid-template-columns: 1fr 1fr 2fr;
+    margin-bottom: 105px;
     padding-left: 30px;
+    gap: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,8 +61,15 @@
   flex-direction: column;
   text-align: center;
   border: $border-primary;
+  border-radius: 3px;
   width: 124px;
   margin-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    gap: 10px;
+    position: relative;
+  }
 }
 
 .example__description {
@@ -70,6 +79,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,6 +93,11 @@
   line-height: 24px;
   padding: 13px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__item-text {
@@ -96,6 +111,12 @@
 
   @media (min-width: $tablet-width) {
     background-color: $color-light;
+    max-width: 179px;
+    position: absolute;
+    bottom: 3px;
+    left: 15px;
+    line-height: 14px;
+    font-size: 14px;
   }
 }
 
@@ -112,10 +133,13 @@
   @media (min-width: $tablet-width) and (max-width: ($desktop-width)-1) {
     margin-left: auto;
     margin-right: 0;
+    margin-top: 0;
+    padding: 13px 11px 0;
     display: flex;
     flex-direction: column;
     text-align: end;
     grid-column: auto;
+    gap: 8px;
   }
 
   @media (min-width: $desktop-width) {
@@ -138,6 +162,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 40px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {

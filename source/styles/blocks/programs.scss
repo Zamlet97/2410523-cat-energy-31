@@ -8,8 +8,14 @@
   flex-direction: column;
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
   @media (min-width: $desktop-width) {
+
     display: grid;
+
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     padding-top: 82px;
