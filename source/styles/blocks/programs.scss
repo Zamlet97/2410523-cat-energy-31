@@ -36,11 +36,17 @@
       "title before"
       "text  before"
       "link  before";
-    padding: 77px 63px 53px 52px;
+    padding: 77px 63px 43px 52px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 41px 61px 55px 52px;
+  }
+}
+
+.programs__card--slim {
+  @media (min-width: $tablet-width) {
+    margin-top: 67px;
   }
 }
 
@@ -59,6 +65,7 @@
     width: 200px;
     height: 211px;
     margin-left: auto;
+    margin-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,12 +75,25 @@
 }
 
 .programs__card--set {
-  padding: 9px 12px;
+  @media (max-width: ($tablet-width)-1) {
+    padding: 9px 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+    padding: 77px 34px 35px 52px;
+  }
 }
 
 .programs__card--set-text {
   max-width: 227px;
   padding-left: 7px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 382px;
+    padding-bottom: 9px;
+    padding-left: 0;
+  }
 }
 
 .programs__card--set::before {
@@ -90,7 +110,7 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 200px;
-    margin-left: auto;
+    margin: 14px 0 48px 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,7 +132,7 @@
     line-height: 36px;
     text-transform: uppercase;
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,7 +146,7 @@
   margin: 6px 0 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 38px;
     margin-top: 0;
   }
 }
@@ -160,6 +180,7 @@
   @media (min-width: $tablet-width) {
     line-height: 30px;
     font-size: 20px;
+    padding: 0 1px 13px;
   }
 
   &:hover::after {

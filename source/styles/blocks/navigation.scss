@@ -4,7 +4,7 @@
 .navigation {
   display: flex;
   align-items: center;
-  padding: 13px 19px;
+  padding: 25px 30px;
   flex-wrap: wrap;
 }
 
@@ -23,6 +23,8 @@
 
   @media (min-width: $tablet-width) {
     gap: 0;
+    padding: 2px;
+    margin-bottom: 12px;
   }
 }
 
@@ -75,6 +77,7 @@
     flex-flow: row wrap;
     min-width: 436px;
     position: static;
+    gap: 10px;
   }
 
   @media (min-width: $desktop-width) {
