@@ -25,8 +25,8 @@
     position: absolute;
     background-color: $color-light;
     max-width: 565px;
-    top: 25%;
-    left: 5%;
+    top: 24%;
+    left: 8%;
   }
 }
 
@@ -69,6 +69,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    text-align: start;
+    padding-left: 41px;
     /* z-index: 2;
       position: absolute;
       background-color: $color-light; */

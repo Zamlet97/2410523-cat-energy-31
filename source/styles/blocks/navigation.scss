@@ -6,6 +6,14 @@
   align-items: center;
   padding: 25px 30px;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 20px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+  }
 }
 
 .navigation__logo {
@@ -25,6 +33,11 @@
     gap: 0;
     padding: 2px;
     margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 11px;
+    padding-left: 14px;
   }
 }
 

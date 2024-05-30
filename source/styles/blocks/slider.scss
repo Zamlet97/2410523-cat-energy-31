@@ -7,6 +7,10 @@
   position: relative;
   width: min(100%, 560px);
   aspect-ratio: 280/256;
+
+  @media (min-width: $desktop-width) {
+    margin: 32px 0 22px 50px;
+  }
 }
 
 
