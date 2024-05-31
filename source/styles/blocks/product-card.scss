@@ -6,16 +6,51 @@
   line-height: 20px;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &::before {
+    @media (max-width: ($tablet-width)-1) {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: #ebebeb;
+      position: absolute;
+      top: 0;
+      box-shadow: -100vw 0 0 0 #ebebeb;
+      overflow: hidden;
+    }
+  }
 }
 
 .product-card:not(:last-child) {
-  background-image: linear-gradient(#ffffff 14%, #f2f2f2 0%);
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(#ffffff 14%, #f2f2f2 0%);
+  }
 }
 
 .product-card--other {
-  border: $border-secondary-fat $color-light-primary;
-  margin-top: 70px;
-  padding: 50px 0 40px;
+  padding: 80px 5px 27px 2px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    border: $border-secondary-fat $color-light-primary;
+    // margin-top: 70px;
+  }
+
+  &::after {
+    @media (max-width: ($tablet-width)-1) {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: #ebebeb;
+      position: absolute;
+      top: 0;
+      box-shadow: -100vw 0 0 0 #ebebeb;
+      overflow: hidden;
+    }
+  }
 }
 
 .product-card--other::before {
@@ -24,7 +59,8 @@
   background-image: url("../../icons/stack.svg#plus");
   width: 30px;
   height: 30px;
-  margin: 0 auto 40px;
+  margin: 25px 122px;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     width: 60px;
@@ -37,7 +73,7 @@
   font-family: $secondary-font;
   color: $color-dark-special;
   margin: 0 auto;
-  max-width: 140px;
+  max-width: 210px;
   text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
@@ -53,12 +89,18 @@
 }
 
 .product-card__link--title {
-  width: 123px;
+  display: block;
+  text-transform: uppercase;
+  max-width: 72px;
+  text-align: start;
 }
 
 .product-card__button {
   width: 280px;
   display: inline-block;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  height: 41px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
@@ -72,7 +114,9 @@
 }
 
 .product-card__button-other {
-  margin: 56px 0 0;
+  margin: 4px 0 0;
+  text-align: center;
+  padding-left: 14px;
 }
 
 .product-card__image {
@@ -118,7 +162,9 @@
   line-height: 16px;
   font-size: 12px;
   text-align: center;
-  max-width: 240px;
+  max-width: 275px;
+  grid-column: 1/-1;
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     line-height: 18px;

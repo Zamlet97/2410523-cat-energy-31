@@ -5,13 +5,13 @@
   position: relative;
   background-color: $color-light;
   width: fit-content;
-
+  box-shadow: 40px 0 0 0 $color-light;
   margin-bottom: 36px;
   margin-top: 0;
 
   @media (min-width: $tablet-width) {
     margin-left: 40px;
-    box-shadow: 40px 0 0 0 $color-light, -40px 0 0 0 $color-light;
+    box-shadow: -40px 0 0 0 $color-light;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +24,20 @@
 .subproducts__item {
   line-height: 14px;
   font-size: 14px;
+  position: relative;
+  padding: 15px 0 18px;
+
+  &::before {
+    @media (max-width: ($tablet-width)-1) {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #cdcdcd;
+      position: absolute;
+      top: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -61,6 +75,9 @@
   color: $color-dark-special;
   font-weight: 700;
   text-transform: uppercase;
+  display: block;
+  padding-bottom: 12px;
+  text-align: start;
 
   @media (min-width: $tablet-width) {
     text-align: start;
@@ -93,7 +110,10 @@
 .subproducts__button {
   width: 280px;
   display: block;
+  padding-top: 13px;
+  padding-bottom: 13px;
   font-weight: 400;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
