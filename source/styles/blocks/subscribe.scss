@@ -7,7 +7,7 @@
   color: $color-dark;
   text-align: center;
   font-family: $secondary-font;
-  padding: 40px 20px;
+  padding: 40px 20px 39px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 104px;
@@ -20,10 +20,11 @@
   position: relative;
   width: fit-content;
   background-color: $color-light;
+  box-shadow: 40px 0 0 0 $color-light;
 
   @media (min-width: $tablet-width) {
     margin-left: 40px;
-    box-shadow: -40px 0 0 0 $color-light, 40px 0 0 0 $color-light;
+    box-shadow: -40px 0 0 0 $color-light;
   }
 
   @media (min-width: $desktop-width) {

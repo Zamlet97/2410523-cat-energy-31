@@ -9,7 +9,8 @@
   border: $border-style-secondary;
   width: 100%;
   margin-bottom: 16px;
-  padding: 2px 5px;
+  padding: 11px 12px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: 376px;
@@ -21,16 +22,22 @@
     width: 496px;
   }
 
+
   &:hover {
     border-color: #cdcdcd;
   }
 
-  &:focus {
+  &:focus,
+  &:focus-visible {
     outline: $border-style-focus;
     border-color: $color-light;
   }
 
-  &:invalid {
+  &::placeholder {
+    opacity: 0;
+  }
+
+  &:user-invalid {
     outline: $border-style-error;
     border-color: $color-light;
   }
@@ -39,7 +46,7 @@
 .form__button {
   font-size: 20px;
   line-height: 26px;
-  padding: 0;
+  padding: 15px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
