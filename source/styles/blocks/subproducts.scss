@@ -1,6 +1,12 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
+.subproducts {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
+}
+
 .subproducts__title {
   position: relative;
   background-color: $color-light;
@@ -21,6 +27,8 @@
     line-height: 40px;
     font-size: 40px;
     text-align: start;
+    margin-left: 0;
+    margin-bottom: 79px;
   }
 }
 
@@ -56,8 +64,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
     align-items: baseline;
+    row-gap: 15px;
+
+    &:not(:first-child) {
+      padding-top: 0;
+      padding-bottom: 15px;
+    }
   }
 }
 
@@ -113,6 +127,7 @@
     display: block;
     border-bottom: $border-primary;
     border-top: $border-primary;
+    margin-top: 0;
   }
 }
 
@@ -139,6 +154,7 @@
     padding: 10px;
     grid-column: 3/4;
     margin-left: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -169,6 +185,9 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    min-width: 339px;
+    padding-left: 48px;
+    padding-right: 8px;
   }
 }
 

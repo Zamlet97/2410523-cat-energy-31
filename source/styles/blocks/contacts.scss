@@ -25,7 +25,7 @@
     position: absolute;
     background-color: $color-light;
     max-width: 565px;
-    top: 24%;
+    top: 23%;
     left: 8%;
   }
 }
@@ -35,7 +35,6 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
-  //font-weight: 700;
   margin: 0;
   text-align: start;
   font-family: $secondary-font;
@@ -47,9 +46,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    /* z-index: 2;
-      position: absolute;
-      background-color: $color-light; */
+    padding-left: 4px;
   }
 }
 
@@ -71,9 +68,6 @@
   @media (min-width: $desktop-width) {
     text-align: start;
     padding-left: 41px;
-    /* z-index: 2;
-      position: absolute;
-      background-color: $color-light; */
   }
 }
 
@@ -83,10 +77,6 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
-  }
-
-  @media (min-width: $desktop-width) {
-    //position: relative;
   }
 }
 

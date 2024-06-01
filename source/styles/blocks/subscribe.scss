@@ -15,7 +15,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 104px;
+    margin-bottom: 77px;
+    margin-top: 0;
   }
 }
 
@@ -38,8 +39,7 @@
     text-align: start;
     font-size: 40px;
     line-height: 40px;
-    margin-bottom: 72px;
-    margin-top: 96px;
+    margin: 0 0 72px 80px;
   }
 }
 
@@ -53,5 +53,17 @@
     font-weight: 400;
     max-width: 600px;
     margin: 0 auto 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-left: 339px;
+    min-width: 700px;
+  }
+}
+
+.subscribe__form {
+  @media (min-width: $desktop-width) {
+    margin-left: 160px;
   }
 }
