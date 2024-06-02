@@ -34,7 +34,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    border: $border-secondary-fat $color-light-primary;
+    border: $border-fat $color-light-primary;
     margin-top: 70px;
     padding: 24px 10px 24px 7px;
   }
@@ -103,6 +103,14 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 10px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product-card__link--title {
@@ -151,6 +159,14 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 2px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

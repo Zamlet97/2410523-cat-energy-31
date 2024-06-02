@@ -106,7 +106,7 @@
 
 
   @media (max-width: 767px) {
-    border-bottom: $border-style #e6e6e6;
+    border-bottom: $border-light #e6e6e6;
     width: calc(100% + 10px);
   }
 
@@ -132,6 +132,14 @@
     line-height: 30px;
     font-size: 20px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .navigation__menu-link--dark {
@@ -145,6 +153,14 @@
     display: block;
     width: calc(100% - 1px);
     padding-top: 6px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .navigation__menu-link--current-secondary::after {

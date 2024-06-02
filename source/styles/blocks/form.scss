@@ -6,7 +6,7 @@
   line-height: 30px;
   color: $color-dark-primary;
   font-family: $secondary-font;
-  border: $border-style-secondary;
+  border: $border-secondary;
   width: 100%;
   margin-bottom: 16px;
   padding: 11px 12px;
@@ -29,7 +29,7 @@
 
   &:focus,
   &:focus-visible {
-    outline: $border-style-focus;
+    outline: $outline-focus;
     border-color: $color-light;
   }
 
@@ -38,7 +38,7 @@
   }
 
   &:user-invalid {
-    outline: $border-style-error;
+    outline: $outline-error;
     border-color: $color-light;
   }
 }
