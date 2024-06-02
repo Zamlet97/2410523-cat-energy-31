@@ -41,11 +41,11 @@
 
   &:hover,
   &:hover::after {
-    background-color: $color-light-special;
+    background-color: $color-light-third;
   }
 
   &:hover::before {
-    border-color: $color-light-special;
+    border-color: $color-light-third;
   }
 
 

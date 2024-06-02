@@ -44,11 +44,11 @@
     align-items: center;
     gap: 5px;
     width: 170px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
-    padding-bottom: 0;
   }
 }
 
@@ -61,14 +61,23 @@
   line-height: 20px;
 
   &:hover::after {
-    background-color: $color-light-special;
+    background-color: $color-light-third;
   }
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin: 0 0 0 42px;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
     margin: 0;
     align-items: center;
     justify-content: end;
+    gap: 24px;
   }
 }
 

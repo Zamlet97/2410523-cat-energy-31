@@ -87,7 +87,7 @@
 }
 
 .programs__card--set-text {
-  max-width: 227px;
+  min-width: 227px;
   padding-left: 7px;
 
   @media (min-width: $tablet-width) {

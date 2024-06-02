@@ -25,7 +25,13 @@
 .promo::before {
   content: "";
   display: block;
-  background-image: linear-gradient(to bottom, #ffffffa1 0%, #68b738cc 0%), url("../../images/background/background-cat\ @2x.png"), linear-gradient(to bottom, #ffffffba 0%, #4f4e54 0%);
+  background-image:
+    linear-gradient(to bottom, #ffffffa1 0%, #68b738cc 0%),
+    image-set(url("../../images/background/background-cat\ @2x.jpg") type("image/jpg") 2x,
+    url("../../images/background/background-cat @1x.jpg") type("image/jpg") 1x,
+    url("../../images/background/background-cat @1x.webp") type("image/webp") 1x,
+    url("../../images/background/background-cat @2x.webp") type("image/webp") 2x),
+    linear-gradient(to bottom, #ffffffba 0%, #4f4e54 0%);
   width: 100%;
   background-repeat: no-repeat;
   background-size: auto 302px;
@@ -40,7 +46,13 @@
 
   @media (min-width: $desktop-width) {
     content: "";
-    background-image: linear-gradient(to bottom, #ffffffa1 0%, #68b738cc 0%), url("../../images/background/cat-desktop@2x.png"), linear-gradient(to bottom, #ffffffba 0%, #4f4e54 0%);
+    background-image:
+      linear-gradient(to bottom, #ffffffa1 0%, #68b738cc 0%),
+      image-set(url("../../images/background/cat-desktop@2x.jpg") type("image/jpg") 2x,
+      url("../../images/background/cat-desktop@1x.jpg") type("image/jpg") 1x,
+      url("../../images/background/cat-desktop@1x.webp") type("image/webp") 1x,
+      url("../../images/background/cat-desktop@2x.webp") type("image/webp") 2x),
+      linear-gradient(to bottom, #ffffffba 0%, #4f4e54 0%);
     background-repeat: no-repeat;
     background-size: auto 694px;
     background-position: center top;
@@ -142,7 +154,7 @@
 .promo__button {
   display: block;
   margin: 0 auto;
-  min-width: calc(100% - 40px);
+  max-width: 100%;
   line-height: 20px;
   font-size: 16px;
 
