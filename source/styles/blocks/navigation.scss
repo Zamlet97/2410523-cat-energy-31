@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 39px;
+    margin-bottom: 20px;
   }
 }
 
@@ -141,7 +141,7 @@
 @media (min-width: $tablet-width) {
   .navigation__menu-link--current::after {
     content: "";
-    border-bottom: 2px solid $color-light-special;
+    border-bottom: 2px solid $color-light-third;
     display: block;
     width: calc(100% - 1px);
     padding-top: 6px;
@@ -149,7 +149,7 @@
 
   .navigation__menu-link--current-secondary::after {
     content: "";
-    border-bottom: 2px solid $color-light-special;
+    border-bottom: 2px solid $color-light-third;
     display: block;
     width: calc(100% - 1px);
     padding-top: 6px;
