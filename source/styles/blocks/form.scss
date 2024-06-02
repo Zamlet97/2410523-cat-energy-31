@@ -6,22 +6,13 @@
   line-height: 30px;
   color: $color-dark-primary;
   font-family: $secondary-font;
-  border: $border-secondary;
-  width: 100%;
-  margin-bottom: 16px;
-  padding: 11px 12px;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    width: 376px;
-    padding: 10px;
-    margin: 0;
-  }
+  border: $border-style-secondary;
 
   @media (min-width: $desktop-width) {
     width: 496px;
+    padding: 10px;
+    margin: 0;
   }
-
 
   &:hover {
     border-color: #cdcdcd;
@@ -46,10 +37,9 @@
 .form__button {
   font-size: 20px;
   line-height: 26px;
-  padding: 15px;
-  width: 100%;
+  padding: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 256px;
     padding: 15px;
   }
